@@ -40,7 +40,7 @@ def shto_butonat_fund(tekst):
     t_paster = pastro_formatimin(tekst).replace('"', "'").replace('\n', ' ')
     return f"""
     <div class="control-panel-bottom">
-        <button style="background:#2e7d32;" class="butoni-opsion" onclick='window.speechSynthesis.cancel(); var msg = new SpeechSynthesisUtterance("{t_paster}"); msg.lang="sq-AL"; window.speechSynthesis.speak(msg);'>🔊 Dëgjo</button>
+        <button style="background:#2e7d32;" class="butoni-opsion" onclick='window.speechSynthesis.cancel(); var msg = new SpeechSynthesisUtterance("{t_paster}"); msg.lang="sq"; window.speechSynthesis.speak(msg);'>🔊 Dëgjo</button>
         <button style="background:#d32f2f;" class="butoni-opsion" onclick="window.speechSynthesis.cancel()">🛑 Ndalo</button>
         <button style="background:#1E3A8A;" class="butoni-opsion" onclick="window.print()">🖨️ Printo</button>
         <button style="background:#6c757d;" class="butoni-opsion" onclick="window.parent.scrollTo({{top: 0, behavior: 'smooth'}})">⬆️ Në Fillim</button>
